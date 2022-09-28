@@ -1,6 +1,7 @@
 import React from 'react';
 import VendingMachine from './VendingMachine';
 import Chips from "./Chips"
+import NavBar from './NavBar'
 import './App.css';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Soda from './Soda';
@@ -12,6 +13,7 @@ function App() {
     <div className="App">
       <h1>Vending Machine</h1> 
         <BrowserRouter>
+        <NavBar />
           <Route exact path='/'>
           <VendingMachine />
         </Route>
